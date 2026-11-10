@@ -14,6 +14,8 @@ In this quarter, we mainly focused on constructing an automatic labeling system 
 
 **2) Describe a potential investigation you would like to pursue for your Quarter 2 Project.**
 
+For next quarter, I think we need to find a balance between efficiency and accuracy of the labeling system so it can scale to the full dataset. The final goal of D12 is to analyze and predict the credit risk of clients. I would like to research which financial features we can extract from our transactions, such as spending patterns and cash flow stability. We need to identify which are harmful and beneficial. I will explore how they could help to evaluate credit risk and compare with various models to determine which approaches predict best. I plan to work from smaller subsets and then gradually scale up to the full dataset, using train-test-validation at each stage, to evaluate model performance.
+
 **3) What is a potential change you’d make to the approach taken in your current Quarter 1 Project?**
 
 **4) What other techniques would you be interested in using in your project?**
