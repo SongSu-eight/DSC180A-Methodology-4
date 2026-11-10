@@ -1,5 +1,5 @@
 title: "DSC 180A Methodology Assignment 4"
-description: "Methodology Assignment 4 of DSC 180A by Song Su"
+#description: "Methodology Assignment 4 of DSC 180A by Song Su"
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
