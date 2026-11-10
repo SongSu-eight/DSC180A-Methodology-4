@@ -1,5 +1,3 @@
-# DSC 180A Methodology Assignment 4
-
 **Name:** Song Su
 
 **E-mail:** sosu@ucsd.edu
