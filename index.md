@@ -8,14 +8,14 @@
 
 ## Reflection Questions
 
-**1) What is the most interesting topic covered in your domain this quarter?**
+**1) What is the most interesting topic covered in your domain this quarter?**  
 In this quarter, we mainly focused on constructing an automatic labeling system and testing basic models like FastText on our smaller labeled dataset. I found what interested me the most was the practical application of LLMs in data labeling. We found that even manual labeling often requires researching unfamiliar company names in transaction memos to determine the correct categories. It is difficult for us to cover all names and cases using regex rules. All of this motivated me to experiment with deploying an LLM on DSMLP and researching how to incorporate Retrieval-Augmented Generation (RAG). I really enjoy figuring out how to combine different techniques in building this automatic labeling system.
 
-**2) Describe a potential investigation you would like to pursue for your Quarter 2 Project.**  
+**2) Describe a potential investigation you would like to pursue for your Quarter 2 Project.**    
 For next quarter, I think we need to find a balance between efficiency and accuracy of the labeling system so it can scale to the full dataset. The final goal of D12 is to analyze and predict the credit risk of clients. I would like to research which financial features we can extract from our transactions, such as spending patterns and cash flow stability. We need to identify which are harmful and beneficial. I will explore how they could help to evaluate credit risk and compare with various models to determine which approaches predict best. I plan to work from smaller subsets and then gradually scale up to the full dataset, using train-test-validation at each stage, to evaluate model performance.
 
-**3) What is a potential change you’d make to the approach taken in your current Quarter 1 Project?**
+**3) What is a potential change you’d make to the approach taken in your current Quarter 1 Project?**  
 So far, we figured out that multiple transactions could be labeled as Category A and also Category B. At the human review step, we gave different labels to some transactions. So, to solve this inconsistency, we need to subdivide categories into some joint categories, like grocery & retail. And for now, our labeling process relies more on AI-assisted labeling generated from our training data. We can even find we missed a lot of company names, even though they are well-known. To improve labeling accuracy and keep efficiency, we need to build a layered system, from regex with more top sales company names in each category and meaningful representative words, to FastText, then a local LLM with a knowledge base to identify undefined cases, and ending with manual review, or may not due to the amount of data we have. We can cross-validate with multiple LLMs if necessary, and then have humans review those with conflicts.
 
-**4) What other techniques would you be interested in using in your project?**
+**4) What other techniques would you be interested in using in your project?**  
 I am interested in BERT and K-means clustering. BERT has better contextual understanding than FastText. It may improve our transaction categorization accuracy, and I would like to compare its performance with that of FastText. For K-means, it could give me some information about financial behavior patterns between clients. I am interested in exploring differences between grouped clients by some factors such as income and the ratio of certain spending categories. I might discover some useful patterns for understanding and evaluating credit risk.
